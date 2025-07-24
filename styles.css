@@ -1,0 +1,78 @@
+/* common design */
+.highlight {
+    color: orange;
+}
+
+
+
+/* ourplant design */
+.container-ourplant-heading {
+    font-family: 'noto serif';
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.container-ourplant-text {
+    font-family: "Inter";
+    opacity: .5;
+    font-size: 22px;
+    padding-bottom: 30px;
+    margin-top: 8px;
+    max-width: 900px;
+}
+
+.container-ourplant {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+
+.products-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border: none;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.products-container>.box p {
+    font-family: 'Inter';
+    font-size: 22px;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.products-container>.box button {
+    border: none;
+    color: white;
+    background-color: orange;
+    width: 100%;
+    padding: 20px;
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.products-container>.box button:hover {
+    background-color: darkorange;
+    cursor: pointer;
+}
