@@ -165,7 +165,6 @@
 
 /* End of Plants Section */
 
-
 /* latest Deal Section */
 
 .latest-deal-container {
@@ -184,8 +183,8 @@
 
 
 .text-latest-deal p {
-    font-size: 18px;
-    color: black;
+    font-size: 22px;
+    opacity: .5;
     max-width: 700px;
     margin: 0 auto 40px;
     line-height: 1.5;
@@ -194,9 +193,9 @@
 
 .image-latest-deal {
     display: grid;
-    grid-template-columns: 39% 59%;
+    grid-template-columns: 37% 61%;
     grid-template-rows: 1fr 1fr;
-    gap: 30px;
+    gap: 20px;
 }
 
 
@@ -264,6 +263,38 @@
 
 .deal button:hover {
     background-color: orange;
+}
+
+/* Responsive for Iphone 14 & 15 pro */
+@media screen and (max-width: 430px) {
+    .image-latest-deal {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .box1,
+    .box2,
+    .box3 {
+        grid-column: 1 / -1;
+        grid-row: auto;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+
+    .text-latest-deal p {
+        font-size: 14px;
+    }
+
+    .deal p {
+        font-size: 20px;
+    }
+
+    .deal button {
+        font-size: 16px;
+    }
+
 }
 
 /* End of latest Deal Section */
