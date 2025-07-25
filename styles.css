@@ -3,22 +3,57 @@
     color: orange;
 }
 
+/* Banner */
 
+.banner-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 120px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
+.text-banner h1 {
+    font-family: 'noto serif';
+    font-size: 65px;
+    font-weight: bold;
+    margin: 0 0 8px 0;
+}
+
+.text-banner p {
+    font-family: "Inter";
+    opacity: .5;
+    font-size: 22px;
+    max-width: 570px;
+    margin: 0px;
+}
+
+.banner-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: -4px;
+}
+
+/* Banner End */
 /* ourplant design */
 .container-ourplant-heading {
     font-family: 'noto serif';
     font-size: 50px;
     font-weight: bold;
-    margin-bottom: 8px;
+    padding-bottom: 16px;
+    margin: 0px;
 }
 
 .container-ourplant-text {
     font-family: "Inter";
     opacity: .5;
     font-size: 22px;
-    padding-bottom: 30px;
-    margin-top: 8px;
+    padding-bottom: 50px;
+    margin: 0px;
     max-width: 900px;
 }
 
@@ -26,15 +61,18 @@
     display: grid;
     place-items: center;
     text-align: center;
-    border: 2px solid black;
-    padding: 20px;
+    margin: 0px auto;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 120px;
 }
-
 
 .products-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+    width: 100%;
 }
 
 .box {
@@ -50,7 +88,6 @@
     height: auto;
     object-fit: cover;
 }
-
 
 .products-container>.box p {
     font-family: 'Inter';
