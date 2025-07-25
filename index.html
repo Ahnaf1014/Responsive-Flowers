@@ -12,94 +12,181 @@
 
 <body>
 
+    <!-- Header -->
+    <header class="navbar">
+        <div class="navbar-logo">
+            <img src="assets/logo.png" alt="Faugei Logo">
+        </div>
+        <nav class="navbar-menu">
+            <a href="#" class="active">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About us</a>
+            <a href="#" class="cart">
+                <img src="assets/shopping-cart.png" alt="Cart Icon">
+                Cart ($56)
+            </a>
+        </nav>
+    </header>
+
+
     <!-- Banner section  -->
-    <section class="banner-container">
-        <div class="text-banner">
-            <h1>ALWYAS FRESH <br>FLOWERS</h1>
-            <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic
-                blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
+    <main>
+        <section class="banner-container">
+            <div class="text-banner">
+                <h1>ALWYAS <span class="highlight">FRESH <br>FLOWERS</span></h1>
+                <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to
+                    exotic
+                    blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
+            </div>
+            <div class="banner-image">
+                <img src="assets/hero-flower.png" alt="Hero-flower">
+            </div>
+        </section>
+
+        <!-- Plants Sections -->
+        <section class="container-ourplant">
+            <h1 class="container-ourplant-heading"> <span class="highlight">Our</span> Plants</h1>
+            <p class="container-ourplant-text">Indulge your senses with the beauty and fragrance of our fresh flower
+                shop.
+                From roses to exotic blooms, we offer a wide variety of fresh.</p>
+
+            <!-- .products-container>.box*8>img[src="pic$.jpg" alt="Lily Blossom"]+h2{Lily Blossom}+p{20 USD}+button{ADD TO CART} -->
+            <div class="products-container">
+                <div class="box">
+                    <img src="assets/sample-flower-image.png" alt="Lily Blossom">
+                    <p>Lily Blossom <br><span class="price">20 USD</span></p>
+                    <button type="button">ADD TO CART</button>
+                </div>
+                <div class="box">
+                    <img src="assets/sample-flower-image.png" alt="Lily Blossom">
+                    <p>Lily Blossom <br><span class="price">20 USD</span></p>
+                    <button type="button">ADD TO CART</button>
+                </div>
+                <div class="box">
+                    <img src="assets/sample-flower-image.png" alt="Lily Blossom">
+                    <p>Lily Blossom <br><span class="price">20 USD</span></p>
+                    <button type="button">ADD TO CART</button>
+                </div>
+                <div class="box">
+                    <img src="assets/sample-flower-image.png" alt="Lily Blossom">
+                    <p>Lily Blossom <br><span class="price">20 USD</span></p>
+                    <button type="button">ADD TO CART</button>
+                </div>
+                <div class="box">
+                    <img src="assets/sample-flower-image.png" alt="Lily Blossom">
+                    <p>Lily Blossom <br><span class="price">20 USD</span></p>
+                    <button type="button">ADD TO CART</button>
+                </div>
+                <div class="box">
+                    <img src="assets/sample-flower-image.png" alt="Lily Blossom">
+                    <p>Lily Blossom <br><span class="price">20 USD</span></p>
+                    <button type="button">ADD TO CART</button>
+                </div>
+                <div class="box">
+                    <img src="assets/sample-flower-image.png" alt="Lily Blossom">
+                    <p>Lily Blossom <br><span class="price">20 USD</span></p>
+                    <button type="button">ADD TO CART</button>
+                </div>
+                <div class="box">
+                    <img src="assets/sample-flower-image.png" alt="Lily Blossom">
+                    <p>Lily Blossom <br><span class="price">20 USD</span></p>
+                    <button type="button">ADD TO CART</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Plants Lover Section  -->
+
+        <section class="section-container">
+            <div class="image-section">
+                <img src="assets/flower-store.png" alt="Flowers">
+                <img class="badge" src="assets/trusted-badge.png" alt="Trusted Seller Badge">
+            </div>
+            <div class="text-section">
+                <h2>Flower & Plants Lover</h2>
+                <ul>
+                    <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses
+                        to
+                        exotic blooms, we offer a wide variety of fresh.</li>
+                    <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses
+                        to
+                        exotic blooms, we offer a wide variety of fresh.</li>
+                    <li>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses
+                        to
+                        exotic blooms, we offer a wide variety of fresh.</li>
+                </ul>
+            </div>
+        </section>
+        <!-- Latest Deal Section -->
+        <section class="latest-deal-container">
+            <div class="text-latest-deal">
+                <h3 class="heading"><span class="highlight">Latest</span> Deals</h3>
+                <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to
+                    exotic
+                    blooms, we offer a wide variety of fresh.</p>
+            </div>
+
+            <div class="image-latest-deal">
+                <div class="deal box1">
+                    <p>60% Off | Bloom Plant</p>
+                    <button type="button">Shop Now</button>
+                </div>
+
+                <div class="deal box3">
+                    <p>30% Off | Ana Plant</p>
+                    <button type="button">Shop Now</button>
+                </div>
+
+                <div class="deal box2">
+                    <p>25% Off | Zabo Plant</p>
+                    <button type="button">Shop Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="newsletter-content">
+                <h2>Join the colorful Bunch</h2>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Write email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer-container">
+        <div class="footer-left">
+            <img src="assets/logo.png" alt="Faugei Logo">
+            <p>Indulge your senses with the beauty and fragrance of our fresh flower shop.</p>
         </div>
-        <div class="banner-image">
-            <img src="assets/hero-flower.png" alt="Hero-flower">
-        </div>
-    </section>
 
-    <!-- Plants Sections -->
-    <section class="container-ourplant">
-        <h1 class="container-ourplant-heading"> <span class="highlight">Our</span> Plants</h1>
-        <p class="container-ourplant-text">Indulge your senses with the beauty and fragrance of our fresh flower shop.
-            From roses to exotic blooms, we offer a wide variety of fresh.</p>
-
-        <!-- .products-container>.box*8>img[src="pic$.jpg" alt="Lily Blossom"]+h2{Lily Blossom}+p{20 USD}+button{ADD TO CART} -->
-        <div class="products-container">
-            <div class="box">
-                <img src="assets/sample-flower-image.png" alt="Lily Blossom">
-                <p>Lily Blossom <br><span class="price">20 USD</span></p>
-                <button type="button">ADD TO CART</button>
+        <div class="footer-links">
+            <div>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Blog</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contact Us</a>
             </div>
-            <div class="box">
-                <img src="assets/sample-flower-image.png" alt="Lily Blossom">
-                <p>Lily Blossom <br><span class="price">20 USD</span></p>
-                <button type="button">ADD TO CART</button>
-            </div>
-            <div class="box">
-                <img src="assets/sample-flower-image.png" alt="Lily Blossom">
-                <p>Lily Blossom <br><span class="price">20 USD</span></p>
-                <button type="button">ADD TO CART</button>
-            </div>
-            <div class="box">
-                <img src="assets/sample-flower-image.png" alt="Lily Blossom">
-                <p>Lily Blossom <br><span class="price">20 USD</span></p>
-                <button type="button">ADD TO CART</button>
-            </div>
-            <div class="box">
-                <img src="assets/sample-flower-image.png" alt="Lily Blossom">
-                <p>Lily Blossom <br><span class="price">20 USD</span></p>
-                <button type="button">ADD TO CART</button>
-            </div>
-            <div class="box">
-                <img src="assets/sample-flower-image.png" alt="Lily Blossom">
-                <p>Lily Blossom <br><span class="price">20 USD</span></p>
-                <button type="button">ADD TO CART</button>
-            </div>
-            <div class="box">
-                <img src="assets/sample-flower-image.png" alt="Lily Blossom">
-                <p>Lily Blossom <br><span class="price">20 USD</span></p>
-                <button type="button">ADD TO CART</button>
-            </div>
-            <div class="box">
-                <img src="assets/sample-flower-image.png" alt="Lily Blossom">
-                <p>Lily Blossom <br><span class="price">20 USD</span></p>
-                <button type="button">ADD TO CART</button>
+            <div>
+                <a href="#">Features</a>
+                <a href="#">Pricing</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Help Center</a>
             </div>
         </div>
-    </section>
 
-    <!-- Latest Deal Section -->
-    <section class="latest-deal-container">
-        <div class="text-latest-deal">
-            <h3 class="heading"><span class="highlight">Latest</span> Deals</h3>
-            <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic
-                blooms, we offer a wide variety of fresh.</p>
+        <div class="footer-social">
+            <a href="#"><img src="assets/icon-linkedin.png" alt="LinkedIn"></a>
+            <a href="#"><img src="assets/icon-twitter.png" alt="X"></a>
+            <a href="#"><img src="assets/icon-facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="assets/icon-youtube.png" alt="YouTube"></a>
         </div>
-
-        <div class="image-latest-deal">
-            <div class="deal box1">
-                <p>60% Off | Bloom Plant</p>
-                <button type="button">Shop Now</button>
-            </div>
-
-            <div class="deal box3">
-                <p>30% Off | Ana Plant</p>
-                <button type="button">Shop Now</button>
-            </div>
-
-            <div class="deal box2">
-                <p>25% Off | Zabo Plant</p>
-                <button type="button">Shop Now</button>
-            </div>
-        </div>
-    </section>
+    </footer>
 
 </body>
 

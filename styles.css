@@ -1,3 +1,59 @@
+/* Header/Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar-logo img {
+    height: 80px;
+    object-fit: contain;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navbar-menu a.active {
+    font-weight: bold;
+}
+
+.navbar-menu .cart {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.navbar-menu .cart img {
+    width: 18px;
+    height: 18px;
+}
+
+/* Responsive for iPhone 14 & 15 Pro */
+@media screen and (max-width: 430px) {
+    .navbar-menu a:not(.cart) {
+        display: none;
+    }
+}
+
+
+
 /* common design */
 .highlight {
     color: orange;
@@ -99,6 +155,7 @@
 
 .products-container {
     display: grid;
+
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     width: 100%;
@@ -165,6 +222,105 @@
 
 /* End of Plants Section */
 
+/* Plants Lover Section */
+
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.image-section {
+    position: relative;
+    flex: 1 1 45%;
+    min-width: 300px;
+    height: 600px;
+    padding-bottom: 70px;
+}
+
+.image-section img:first-child {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge {
+    position: absolute;
+    max-width: 286px;
+    top: -120px;
+    left: 90%;
+    transform: translateX(-50%);
+    width: auto;
+    height: auto;
+}
+
+.text-section {
+    flex: 1 1 45%;
+    min-width: 300px;
+    height: 400px;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.text-section h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.text-section li {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 22px;
+    opacity: .5;
+}
+
+/* Mobile Responsive for 430px */
+@media (max-width: 430px) {
+    .section-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .badge {
+        display: none;
+    }
+
+    .text-section {
+        height: auto;
+        padding-top: 20px;
+    }
+
+    .text-section h2 {
+        font-size: 20px;
+    }
+
+    .text-section ul {
+        padding-left: 18px;
+    }
+
+    .text-section li {
+        font-size: 15px;
+    }
+}
+
+/* End of Plants Lover Section */
 /* latest Deal Section */
 
 .latest-deal-container {
@@ -172,6 +328,7 @@
     margin: 0 auto;
     padding: 0px 20px;
     text-align: center;
+    padding-bottom: 120px;
 }
 
 
@@ -249,6 +406,7 @@
     font-size: 28px;
 }
 
+
 .deal button {
     color: white;
     background: none;
@@ -298,3 +456,144 @@
 }
 
 /* End of latest Deal Section */
+
+
+/* Newsletter Section */
+.newsletter-section {
+    background-image: url('assets/news-letter-bg.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 200px 20px;
+    color: white;
+}
+
+.newsletter-section h2 {
+    font-size: 50px;
+    font-family: 'Noto Serif', serif;
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    overflow: hidden;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    font-size: 16px;
+}
+
+.newsletter-form button {
+    background-color: orange;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: darkorange;
+}
+
+/* Footer Section */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-left {
+    flex: 1 1 20px;
+}
+
+.footer-left img {
+    height: 50px;
+    margin-bottom: 16px;
+}
+
+.footer-left p {
+    font-family: 'Inter', sans-serif;
+    opacity: 0.6;
+    font-size: 16px;
+    max-width: 300px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 100px;
+    flex: 2;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #333;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    opacity: .8;
+}
+
+.footer-social {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsive */
+@media screen and (max-width: 430px) {
+    .newsletter-section h2 {
+        font-size: 22px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+        gap: 10px;
+        background: none;
+    }
+
+    .newsletter-form input,
+    .newsletter-form button {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-social {
+        justify-content: flex-start;
+    }
+}
+
+/* End of Footer Section */
