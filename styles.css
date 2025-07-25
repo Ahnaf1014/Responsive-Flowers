@@ -38,6 +38,35 @@
     margin-bottom: -4px;
 }
 
+/* Responsive for Iphone 14 & 15 pro */
+@media screen and (max-width: 430px) {
+    .banner-container {
+        flex-wrap: wrap-reverse;
+        gap: 30px;
+        padding-left: 0;
+        padding-bottom: 65px;
+    }
+
+    .banner-image img {
+        width: 100vw;
+        max-width: 100vw;
+        height: auto;
+        display: block;
+    }
+
+    .text-banner {
+        padding: 0 20px;
+    }
+
+    .text-banner h1 {
+        font-size: 24px;
+    }
+
+    .text-banner p {
+        font-size: 14px;
+    }
+}
+
 /* Banner End */
 /* ourplant design */
 .container-ourplant-heading {
@@ -70,7 +99,7 @@
 
 .products-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
     width: 100%;
 }
@@ -113,3 +142,25 @@
     background-color: darkorange;
     cursor: pointer;
 }
+
+/* Responsive for Iphone 14 & 15 pro */
+@media screen and (max-width: 430px) {
+    .products-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container-ourplant-heading {
+        font-size: 24px;
+    }
+
+    .container-ourplant-text {
+        font-size: 14px;
+    }
+
+    .products-container>.box p {
+        font-size: 16px;
+    }
+
+}
+
+/* End of Plants Section */
